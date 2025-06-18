@@ -1,6 +1,6 @@
 # 🚀 Transformer Modelleri Nedir ve Nasıl Çalışır?
 
-### 1. Transformer Nedir?
+### 🤓 1. Transformer Nedir?
 Transformer, doğal dil işleme (NLP) alanında devrim yaratan bir model mimarisidir. İlk olarak 2017 yılında tanıtıldı. Temel olarak “attention (dikkat)” mekanizmasıyla çalışır. Bu mekanizma sayesinde model, bir cümlede hangi kelimenin diğerine ne kadar önemli olduğunu öğrenir.
 
 
@@ -19,13 +19,13 @@ Kullanım durumlarına göre bu bloklar şöyle kullanılır:
 
 
 
-### 3. Dikkat (Attention) Mekanizması
+### ⚠️ 3. Dikkat (Attention) Mekanizması
 Model, her kelimeye eşit davranmaz. Bazı kelimelere daha fazla "dikkat eder".  
 Örneğin `"You like this course"` cümlesinde `"like"` kelimesini doğru çevirebilmek için `"You"` kelimesine de dikkat etmek gerekir.
 
 
 
-### 4. Transformer Ailesi ve Örnek Modeller
+### 🧑‍🧑‍🧒‍🧒 4. Transformer Ailesi ve Örnek Modeller
 Bazı önemli Transformer tabanlı modeller:
 
 - **GPT (2018)**: Metin üretiminde başarılı.  
@@ -44,7 +44,7 @@ Bazı önemli Transformer tabanlı modeller:
 
 
 
-### 6. Transformer’lar Büyük ve Güçlüdür
+### 💪🏻 6. Transformer’lar Büyük ve Güçlüdür
 Transformer modelleri milyarlarca parametreye sahip olabilir.  
 Bu yüzden eğitimi pahalı ve çevresel açıdan maliyetlidir.  
 Model paylaşımı, kaynak israfını önlemek için çok önemlidir.
