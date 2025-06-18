@@ -25,7 +25,7 @@ Model, her kelimeye eşit davranmaz. Bazı kelimelere daha fazla "dikkat eder".
 
 
 
-## 4. Transformer Ailesi ve Örnek Modeller
+### 4. Transformer Ailesi ve Örnek Modeller
 Bazı önemli Transformer tabanlı modeller:
 
 - **GPT (2018)**: Metin üretiminde başarılı.  
@@ -36,7 +36,7 @@ Bazı önemli Transformer tabanlı modeller:
 - **Llama, Mistral, Gemma, SmolLM** gibi daha yeni modeller de mevcuttur.
 
 
-## 5. Model Eğitimi: Pretraining ve Fine-Tuning
+### 5. Model Eğitimi: Pretraining ve Fine-Tuning
 
 - **Pretraining (Ön Eğitim)**: Model büyük veriyle sıfırdan eğitilir.
 - **Fine-Tuning (İnce Ayar)**: Önceden eğitilmiş model, daha küçük ve özel veriyle belirli bir göreve adapte edilir.
@@ -44,16 +44,16 @@ Bazı önemli Transformer tabanlı modeller:
 
 
 
-## 6. Transformer’lar Büyük ve Güçlüdür
+### 6. Transformer’lar Büyük ve Güçlüdür
 Transformer modelleri milyarlarca parametreye sahip olabilir.  
 Bu yüzden eğitimi pahalı ve çevresel açıdan maliyetlidir.  
 Model paylaşımı, kaynak israfını önlemek için çok önemlidir.
 
 
 
-## 7. Terimler
+### 7. Terimler
 
 - **Mimari (Architecture)**: Modelin yapısı (örneğin `BERT`).
 - **Checkpoint**: Mimariyle eğitilmiş ağırlıklar (örneğin `bert-base-cased`).
 - **Model**: Genel bir terim olup mimari veya checkpoint anlamında kullanılabilir.
-h
+
