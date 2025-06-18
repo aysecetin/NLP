@@ -1,8 +1,5 @@
 # 🤖 Transformers: Ne Yapabilirler?
 
-Bu bölümde, Transformer modellerinin neler yapabileceğini ve 🤗 Transformers kütüphanesindeki `pipeline()` fonksiyonunu nasıl kullanabileceğimizi öğreneceğiz.
----
-
 ## 🚀 Transformer’lar Nerelerde Kullanılır?
 
 Transformer modelleri metin, görüntü, ses gibi farklı veri türlerinde çok çeşitli görevlerde kullanılabilir:
