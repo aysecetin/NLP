@@ -5,7 +5,7 @@ Transformer, doğal dil işleme (NLP) alanında devrim yaratan bir model mimaris
 
 
 
-## 2. Ana Yapısı Nasıldır?
+### 2. Ana Yapısı Nasıldır?
 Transformer iki ana bloktan oluşur:
 
 - **Encoder (Kodlayıcı)**: Girdi metnini anlar.  
@@ -19,7 +19,7 @@ Kullanım durumlarına göre bu bloklar şöyle kullanılır:
 
 
 
-## 3. Dikkat (Attention) Mekanizması
+### 3. Dikkat (Attention) Mekanizması
 Model, her kelimeye eşit davranmaz. Bazı kelimelere daha fazla "dikkat eder".  
 Örneğin `"You like this course"` cümlesinde `"like"` kelimesini doğru çevirebilmek için `"You"` kelimesine de dikkat etmek gerekir.
 
