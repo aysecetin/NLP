@@ -1,8 +1,5 @@
 # 🔧 Transformer Mimarileri ve Ne Zaman Hangi Model Kullanılır?
 
-Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler için uygun olduğunu inceleyeceğiz.
-
----
 
 ## 🧱 Üç Temel Mimari
 
@@ -15,7 +12,7 @@ Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler iç
   - Extractive soru-cevap
 - **Örnekler:** BERT, DistilBERT
 
----
+
 
 ### 2. Decoder-Only Modeller
 - Sadece decoder kısmı kullanılır.
@@ -26,7 +23,7 @@ Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler iç
   - Chatbot uygulamaları
 - **Örnekler:** GPT, LLaMA, SmolLM, Gemma
 
----
+
 
 ### 3. Encoder-Decoder (Seq2Seq) Modeller
 - Hem encoder hem decoder birlikte çalışır.
@@ -37,7 +34,7 @@ Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler iç
   - Generative soru-cevap
 - **Örnekler:** T5, BART, Marian, mBART
 
----
+
 
 ## 📊 Göreve Göre Mimari Seçimi
 
@@ -52,7 +49,7 @@ Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler iç
 | Soru-cevap (generative)      | Encoder-Decoder   | T5, BART           |
 | Sohbet (chatbot)             | Decoder           | GPT, LLaMA         |
 
----
+
 
 ## 🌟 Modern LLM’ler: Özellikler ve Aşamalar
 
@@ -68,7 +65,7 @@ Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler iç
 - Akıl yürütme
 - Few-shot öğrenme
 
----
+
 
 ## ⚙️ Verimli Attention Yöntemleri
 
@@ -84,7 +81,7 @@ Bu bölümde, üç temel Transformer mimarisini ve bunların hangi görevler iç
 - Pozisyon bilgisi büyük matris yerine iki küçük matrisle hesaplanır.
 - Bellek kullanımını azaltır.
 
----
+
 
 ## ✅ Özet
 
