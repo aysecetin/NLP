@@ -72,6 +72,8 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - Çıktı dil modeli başlığına verilir → sıradaki kelime tahmin edilir.
 
 
+![GPT-2 Mimarisi](./images/gpt2_architecture.png)
+
 
 ## 🗂️ Metin Sınıflandırma (BERT)
 
@@ -106,6 +108,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - Text infilling: metin boşlukları [mask] ile doldurulur
 - Decoder orijinali tahmin eder
 
+![BART Mimarisi](./images/bart_architecture.png)
 
 
 ## 🌍 Çeviri (BART / T5)
@@ -132,6 +135,7 @@ transcriber = pipeline(
 )
 transcriber("https://huggingface.co/datasets/Narsil/asr_dummy/resolve/main/mlk.flac")
 ```
+![Whisper Mimarisi](./images/whisper_architecture.png)
 
 ## 🖼️ Görüntü İşleme: Vision Transformer (ViT)
 - Görsel, küçük yamalara (patch) bölünür
