@@ -44,7 +44,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - **Decoder modeller (GPT)**: Üretim odaklı görevler (metin üretimi)
 - **Encoder-Decoder modeller (T5, BART)**: Girdi-çıktı dönüşümü (çeviri, özet)
 
----
+
 
 ## ✍️ Metin Üretimi (GPT-2)
 
@@ -53,7 +53,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - Maskeli attention geleceğe bakmayı engeller.
 - Çıktı dil modeli başlığına verilir → sıradaki kelime tahmin edilir.
 
----
+
 
 ## 🗂️ Metin Sınıflandırma (BERT)
 
@@ -63,7 +63,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - MLM + NSP ile pretraining yapılır
 - Lineer katman ile sınıf tahmini yapılır
 
----
+
 
 ## 🔤 Token Sınıflandırma (NER / POS)
 
@@ -71,7 +71,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - Final hidden state → lineer katman → token etiketi
 - NER, POS tagging gibi görevlerde kullanılır
 
----
+
 
 ## ❓ Soru-Cevaplama
 
@@ -114,3 +114,22 @@ transcriber = pipeline(
     model="openai/whisper-base.en"
 )
 transcriber("https://huggingface.co/datasets/Narsil/asr_dummy/resolve/main/mlk.flac")
+```
+
+## 🖼️ Görüntü İşleme: Vision Transformer (ViT)
+- Görsel, küçük yamalara (patch) bölünür
+- Her patch → vektöre dönüştürülür
+- [CLS] token eklenir
+- Pozisyon bilgisi ile birlikte Transformer encoder’a verilir
+- Sadece [CLS] token çıktısı → sınıflandırma katmanına verilir
+ViT ≈ BERT
+- [CLS] token
+- Pozisyon kodlama
+- Encoder blokları
+
+## 🔚 Sonuç
+- NLP, görüntü, ses gibi farklı alanlarda Transformer mimarileri kullanılır
+- Encoder → anlamaya yönelik görevler
+- Decoder → üretim görevleri
+- Encoder-decoder → dönüşüm görevleri (çeviri, özet)
+- Transfer öğrenme sayesinde bu modeller pek çok göreve kolayca adapte olabilir.
