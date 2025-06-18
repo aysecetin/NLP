@@ -8,7 +8,7 @@ Her görevdeki farklılıklar:
 - Hangi model mimarisinin kullanıldığı (encoder, decoder, encoder-decoder)
 - Çıktının nasıl işlendiği
 
----
+
 
 ## 🧠 Transformer Mimarileri
 
@@ -24,7 +24,7 @@ Yeni metin üretir.
 Bir veri türünü diğerine dönüştürür (çeviri, özetleme).  
 **Örnek:** T5, BART — çeviri, özetleme, soru-cevap
 
----
+
 
 ## 🗣️ Transformer Tabanlı Dil Modelleri
 
@@ -36,7 +36,7 @@ BERT gibi modeller kullanır. Maskelenmiş kelimeleri bağlamdan tahmin eder.
 ### Causal Language Modeling (CLM) – Decoder tabanlı  
 GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelimeyi tahmin eder.
 
----
+
 
 ## 🧩 Model Türleri ve Görevleri
 
@@ -79,7 +79,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - Span classification: start + end logits
 - Cross-entropy loss ile eğitilir
 
----
+
 
 ## ✂️ Özetleme (BART)
 
@@ -88,7 +88,7 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - Text infilling: metin boşlukları [mask] ile doldurulur
 - Decoder orijinali tahmin eder
 
----
+
 
 ## 🌍 Çeviri (BART / T5)
 
@@ -97,7 +97,6 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 - mBART çok dilli destek sunar
 - Cross-entropy loss ile eğitilir
 
----
 
 ## 🔊 Ses ve Konuşma: Whisper
 
