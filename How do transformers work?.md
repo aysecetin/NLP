@@ -1,59 +1,104 @@
 # 🚀 Transformer Modelleri Nedir ve Nasıl Çalışır?
 
-### 🤓 1. Transformer Nedir?
-Transformer, doğal dil işleme (NLP) alanında devrim yaratan bir model mimarisidir. İlk olarak 2017 yılında tanıtıldı. Temel olarak “attention (dikkat)” mekanizmasıyla çalışır. Bu mekanizma sayesinde model, bir cümlede hangi kelimenin diğerine ne kadar önemli olduğunu öğrenir.
+## 1. Transformer Nedir?
+
+Transformer, 2017 yılında "Attention is All You Need" adlı makaleyle tanıtılan bir yapay zeka model mimarisidir. Özellikle doğal dil işleme (NLP) alanında büyük bir etki yaratmıştır.
+
+Diğer modellerin aksine, Transformer'lar sıralı veriyle çalışırken verileri sırayla işlemez. Bunun yerine, tüm kelimelere aynı anda bakar ve dikkat (attention) mekanizmasıyla hangi kelimelere odaklanması gerektiğini belirler. Bu sayede uzun cümlelerde bile bağlamı koruyarak daha başarılı sonuçlar üretir.
 
 
 
-### 2. Ana Yapısı Nasıldır?
-Transformer iki ana bloktan oluşur:
+## 2. Ana Yapısı Nasıldır?
 
-- **Encoder (Kodlayıcı)**: Girdi metnini anlar.  
-- **Decoder (Kod Çözücü)**: Anlaşılan girdiye göre çıktı üretir (örneğin çeviri yapar).
+Transformer iki temel bileşenden oluşur:
 
-Kullanım durumlarına göre bu bloklar şöyle kullanılır:
+- **Encoder (Kodlayıcı):** Girdi metnini işler ve anlamlı temsiller (özellikler) oluşturur.
+- **Decoder (Kod Çözücü):** Encoder çıktısını kullanarak hedef metni üretir (örneğin çeviri yaparken).
 
-- **Sadece Encoder**: Sınıflandırma, duygu analizi gibi anlayan görevler.
-- **Sadece Decoder**: Metin üretimi gibi üretici görevler.
-- **Encoder + Decoder**: Çeviri, özetleme gibi girişten çıkış üreten görevler.
+Bu yapı üç farklı kullanım şeklinde karşımıza çıkar:
 
-
-
-### ⚠️ 3. Dikkat (Attention) Mekanizması
-Model, her kelimeye eşit davranmaz. Bazı kelimelere daha fazla "dikkat eder".  
-Örneğin `"You like this course"` cümlesinde `"like"` kelimesini doğru çevirebilmek için `"You"` kelimesine de dikkat etmek gerekir.
+- **Encoder-Only:** Girişin analiz edilmesi gereken görevlerde kullanılır (örneğin duygu analizi, metin sınıflandırma).
+- **Decoder-Only:** Metin üretimi gibi görevlerde kullanılır (örneğin GPT modelleri).
+- **Encoder-Decoder:** Girişten bir çıktı üretildiği durumlarda kullanılır (örneğin çeviri, özetleme).
 
 
+## 3. Dikkat (Attention) Mekanizması
 
-### 🧑‍🧑‍🧒‍🧒 4. Transformer Ailesi ve Örnek Modeller
-Bazı önemli Transformer tabanlı modeller:
+Attention, Transformer’ın temelidir. Modelin, cümledeki hangi kelimenin diğer kelimelerle olan ilişkisine daha fazla "dikkat" etmesi gerektiğini belirler.
 
-- **GPT (2018)**: Metin üretiminde başarılı.  
-- **BERT (2018)**: Cümle anlamı üzerine güçlü.  
-- **T5 (2019)**: Her şeyi çeviri gibi ele alır (input → output).  
-- **GPT-3 (2020)**: Devasa boyutta, çok yönlü.  
-- **InstructGPT (2022)**: Komutları takip etmeyi öğrenmiş hali.  
-- **Llama, Mistral, Gemma, SmolLM** gibi daha yeni modeller de mevcuttur.
+Örneğin:  
+"You like this course" cümlesini Fransızcaya çevirirken, "like" fiilinin doğru çekimi için "you" öznesine dikkat edilmelidir. Aynı şekilde, "this" kelimesi çevrilirken "course" kelimesinin cinsiyetine bakmak gerekebilir.
 
-
-### 5. Model Eğitimi: Pretraining ve Fine-Tuning
-
-- **Pretraining (Ön Eğitim)**: Model büyük veriyle sıfırdan eğitilir.
-- **Fine-Tuning (İnce Ayar)**: Önceden eğitilmiş model, daha küçük ve özel veriyle belirli bir göreve adapte edilir.
-  - Bu yöntem daha hızlı, ucuz ve çevreci bir alternatiftir.
+Bu sayede model, bağlama duyarlı çeviriler ve analizler yapabilir. Bu mekanizma her kelime için tüm diğer kelimeleri değerlendirir ve bağlamı dikkate alarak karar verir.
 
 
 
-### 💪🏻 6. Transformer’lar Büyük ve Güçlüdür
-Transformer modelleri milyarlarca parametreye sahip olabilir.  
-Bu yüzden eğitimi pahalı ve çevresel açıdan maliyetlidir.  
-Model paylaşımı, kaynak israfını önlemek için çok önemlidir.
+## 4. Transformer Ailesi ve Örnek Modeller
 
+Yıllar içinde farklı özellikler taşıyan birçok Transformer tabanlı model geliştirildi:
 
+- **GPT (2018):** Metin üretiminde başarılı. Tek yönlü, sadece geçmişe bakar (causal).
+- **BERT (2018):** Cümle anlamı üzerine güçlü. Maskeli kelime tahmini yapar (bidirectional).
+- **GPT-2 / GPT-3 / InstructGPT (2019-2022):** Daha büyük, daha güçlü versiyonlar. Özellikle GPT-3 sıfır örnekle (zero-shot) görevleri gerçekleştirebilir.
+- **T5 (2019):** Tüm görevleri bir çeviri problemine dönüştürür.
+- **LLaMA, Mistral, Gemma, SmolLM (2023–2024):** Daha verimli, hafif ve bazıları çok dilli yeni nesil modellerdir.
 
-### 7. Terimler
+Bu modellerin çoğu üç ana gruba ayrılır:
+- **GPT-türü (oto-regresif)**
+- **BERT-türü (oto-şifreleyici)**
+- **T5-türü (girişten çıkışa - sequence-to-sequence)**
 
-- **Mimari (Architecture)**: Modelin yapısı (örneğin `BERT`).
-- **Checkpoint**: Mimariyle eğitilmiş ağırlıklar (örneğin `bert-base-cased`).
-- **Model**: Genel bir terim olup mimari veya checkpoint anlamında kullanılabilir.
+---
+
+## 5. Model Eğitimi: Pretraining ve Fine-Tuning
+
+Transformer modelleri iki aşamada eğitilir:
+
+### 🔧 Pretraining (Ön Eğitim):
+- Büyük miktarda etiketsiz metinle model sıfırdan eğitilir.
+- Model dilin istatistiksel yapısını öğrenir.
+- Bu süreç çok zaman ve kaynak gerektirir (örneğin haftalar sürebilir).
+
+### 🔧 Fine-Tuning (İnce Ayar):
+- Önceden eğitilmiş model, daha küçük ve etiketli bir veriyle özel bir göreve göre ayarlanır.
+- Daha az veri, daha az zaman ve daha az kaynakla iyi sonuçlar elde edilir.
+- Bu nedenle her zaman hazır bir modelle başlamak, sıfırdan eğitimden çok daha avantajlıdır.
+
+Örneğin: İngilizce eğitilmiş bir modeli, bilimsel makaleleri anlaması için arXiv veri kümesiyle fine-tune edebiliriz.
+
+---
+
+## 6. Transformer’lar Büyük ve Güçlüdür
+
+Transformer modellerinin başarısı, genellikle boyutlarının büyüklüğüyle paraleldir.  
+GPT-3 gibi modellerin yüz milyarlarca parametresi vardır. Bu da eğitimlerini:
+
+- **Zaman açısından pahalı**,  
+- **Donanım açısından zor**,  
+- **Çevresel olarak maliyetli** hâle getirir.
+
+Bu yüzden modellerin ağırlıklarının paylaşılması çok önemlidir. Böylece bir modeli sıfırdan eğitmek yerine, hazır bir modelin üzerine inşa etmek hem çevre dostu hem de verimlidir.
+
+Ayrıca araçlar sayesinde eğitimin karbon ayak izi hesaplanabilir:  
+- [`ML CO2 Impact`](https://mlco2.github.io/impact)  
+- [`CodeCarbon`](https://codecarbon.io) (🤗 Transformers ile entegre çalışır)
+
+---
+
+## 7. Terimler
+
+Bazı temel terimler:
+
+- **Architecture (Mimari):** Modelin iskeleti, yani katmanlar ve yapı (örneğin: BERT).
+- **Checkpoint:** O mimari üzerinde eğitilmiş özel ağırlıklar (örneğin: `bert-base-cased`).
+- **Model:** Genel bir terim; bazen mimariyi, bazen checkpoint’i veya ikisini birden ifade eder.
+
+Örneğin:
+- "BERT" → bir mimaridir.  
+- "bert-base-cased" → Google’ın bu mimariyle eğittiği ağırlıklardır.  
+- "BERT modeli" → ikisini de kast edebilir.
+
+---
+
+📌 Bu temel bilgiler ışığında Transformer mimarilerinin detaylarına daha sonra daha derinlemesine dalacağız. Şimdilik genel yapıyı anlamanız yeterli.
 
