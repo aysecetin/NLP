@@ -1,6 +1,6 @@
 # 🚀 Transformer Modelleri Nedir ve Nasıl Çalışır?
 
-## 1. Transformer Nedir?
+## 🤓 1. Transformer Nedir?
 
 Transformer, 2017 yılında "Attention is All You Need" adlı makaleyle tanıtılan bir yapay zeka model mimarisidir. Özellikle doğal dil işleme (NLP) alanında büyük bir etki yaratmıştır.
 
@@ -22,7 +22,7 @@ Bu yapı üç farklı kullanım şeklinde karşımıza çıkar:
 - **Encoder-Decoder:** Girişten bir çıktı üretildiği durumlarda kullanılır (örneğin çeviri, özetleme).
 
 
-## 3. Dikkat (Attention) Mekanizması
+## ⚠️ 3. Dikkat (Attention) Mekanizması
 
 Attention, Transformer’ın temelidir. Modelin, cümledeki hangi kelimenin diğer kelimelerle olan ilişkisine daha fazla "dikkat" etmesi gerektiğini belirler.
 
@@ -33,7 +33,7 @@ Bu sayede model, bağlama duyarlı çeviriler ve analizler yapabilir. Bu mekaniz
 
 
 
-## 4. Transformer Ailesi ve Örnek Modeller
+## 🧑‍🧑‍🧒‍🧒 4. Transformer Ailesi ve Örnek Modeller
 
 Yıllar içinde farklı özellikler taşıyan birçok Transformer tabanlı model geliştirildi:
 
@@ -68,7 +68,7 @@ Transformer modelleri iki aşamada eğitilir:
 
 ---
 
-## 6. Transformer’lar Büyük ve Güçlüdür
+## 💪🏻 6. Transformer’lar Büyük ve Güçlüdür
 
 Transformer modellerinin başarısı, genellikle boyutlarının büyüklüğüyle paraleldir.  
 GPT-3 gibi modellerin yüz milyarlarca parametresi vardır. Bu da eğitimlerini:
@@ -85,7 +85,7 @@ Ayrıca araçlar sayesinde eğitimin karbon ayak izi hesaplanabilir:
 
 ---
 
-## 7. Terimler
+## 🙂‍↕️ 7. Terimler
 
 Bazı temel terimler:
 
@@ -97,8 +97,3 @@ Bazı temel terimler:
 - "BERT" → bir mimaridir.  
 - "bert-base-cased" → Google’ın bu mimariyle eğittiği ağırlıklardır.  
 - "BERT modeli" → ikisini de kast edebilir.
-
----
-
-📌 Bu temel bilgiler ışığında Transformer mimarilerinin detaylarına daha sonra daha derinlemesine dalacağız. Şimdilik genel yapıyı anlamanız yeterli.
-
