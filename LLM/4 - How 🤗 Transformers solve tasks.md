@@ -24,6 +24,8 @@ Yeni metin üretir.
 Bir veri türünü diğerine dönüştürür (çeviri, özetleme).  
 **Örnek:** T5, BART — çeviri, özetleme, soru-cevap
 
+![GPT-2 Mimarisi](./images/gpt2_architecture.png)
+
 
 
 ## 🗣️ Transformer Tabanlı Dil Modelleri
