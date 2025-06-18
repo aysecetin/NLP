@@ -66,7 +66,7 @@ unmasker = pipeline("fill-mask")
 unmasker("This course will teach you all about <mask> models.", top_k=2)
 ```
 
-### Varlık Tanıma (NER)
+### Varlık Tanıma (NER)
 ```python
 from transformers import pipeline
 
@@ -74,7 +74,7 @@ ner = pipeline("ner", grouped_entities=True)
 ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
 ```
 
-### Soru-Cevaplama
+### Soru-Cevaplama
 
 ```python
 from transformers import pipeline
