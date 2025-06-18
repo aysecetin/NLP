@@ -1,6 +1,6 @@
 # 🚀 Transformer Modelleri Nedir ve Nasıl Çalışır?
 
-## 1. Transformer Nedir?
+### 1. Transformer Nedir?
 Transformer, doğal dil işleme (NLP) alanında devrim yaratan bir model mimarisidir. İlk olarak 2017 yılında tanıtıldı. Temel olarak “attention (dikkat)” mekanizmasıyla çalışır. Bu mekanizma sayesinde model, bir cümlede hangi kelimenin diğerine ne kadar önemli olduğunu öğrenir.
 
 
