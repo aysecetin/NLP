@@ -40,10 +40,26 @@ GPT gibi modeller kullanır. Sadece önceki kelimelere bakarak bir sonraki kelim
 
 ## 🧩 Model Türleri ve Görevleri
 
-- **Encoder modeller (BERT)**: Anlama odaklı görevler (sınıflandırma, NER, QA)
-- **Decoder modeller (GPT)**: Üretim odaklı görevler (metin üretimi)
-- **Encoder-Decoder modeller (T5, BART)**: Girdi-çıktı dönüşümü (çeviri, özet)
 
+**1. Encoder Modeller (BERT)**
+➡️ Metni analiz eder
+⚙️Kullanım alanları:
+- Sınıflandırma
+- Named Entity Recognition (NER)
+- Soru-cevap
+
+**2. Decoder Modeller (GPT, LLaMA)**
+➡️ Yeni metin üretir
+⚙️Kullanım alanları:
+- Metin tamamlama
+- Kod veya hikâye üretimi
+
+**3. Encoder-Decoder Modeller (T5, BART)**
+➡️ Girdi → çıktı dönüştürür
+⚙️Kullanım alanları:
+- Özetleme
+- Çeviri
+- Soru-cevap
 
 
 ## ✍️ Metin Üretimi (GPT-2)
