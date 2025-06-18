@@ -1,4 +1,4 @@
-# 🔧 Transformer Mimarileri ve Ne Zaman Hangi Model Kullanılır?
+# ⚙️ Transformer Mimarileri ve Ne Zaman Hangi Model Kullanılır?
 
 
 ## 🧱 Üç Temel Mimari
