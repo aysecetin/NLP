@@ -18,12 +18,11 @@ Modelin aynı anda işleyebildiği maksimum token sayısıdır. Uzun bağlam dah
 - **Bellek kullanımı**: bağlam uzunluğu arttıkça **kareli (quadratic)** artar  
 - **İşlem süresi**: doğrusal (linear) artar
 
----
+
 
 ## ✍️ Etkili Girdi Hazırlama (Prompting)
 Model sadece bir sonraki token’ı tahmin eder. Bu yüzden **iyi yapılandırılmış promptlar**, çıktının kalitesini doğrudan etkiler.
 
----
 
 ## 🧱 Inference Süreci: İki Aşama
 
@@ -41,7 +40,7 @@ Model birer birer token üretir. Her adımda:
 - Bir token seçilir  
 - Devam edip etmeyeceği kontrol edilir
 
----
+
 
 ## 🎛️ Token Seçim Stratejileri
 
