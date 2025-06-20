@@ -96,7 +96,7 @@ Modelin her adımda birden fazla olasılığı paralel olarak değerlendirdiği 
 
 
 
-## ✅ Sonuç
+## 🧭  Sonuç
 LLM inference sürecini etkili kullanmak için şu başlıkları iyi kavramak gerekir:
 
 - Attention ve bağlamın rolü  
