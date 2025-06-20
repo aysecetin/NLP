@@ -56,14 +56,14 @@ Model birer birer token üretir. Her adımda:
 - **Presence penalty**: Daha önce geçen kelimelere ceza  
 - **Frequency penalty**: Sık kullanılanlara artan ceza
 
----
+
 
 ## 📏 Metin Uzunluğu Kontrolü
 - **Token sınırları**  
 - **Durdurma dizileri (stop sequences)**  
 - **EOS tokenı** (ör. `<|im_end|>`)
 
----
+
 
 ## ♟️ Beam Search
 Modelin her adımda birden fazla olasılığı paralel olarak değerlendirdiği tekniktir.
@@ -74,7 +74,7 @@ Modelin her adımda birden fazla olasılığı paralel olarak değerlendirdiği 
 
 > Daha iyi tutarlılık sağlar, ancak hesaplama maliyeti yüksektir.
 
----
+
 
 ## ⚙️ Performans ve Optimizasyon
 
@@ -84,7 +84,6 @@ Modelin her adımda birden fazla olasılığı paralel olarak değerlendirdiği 
 - **Throughput**: Aynı anda kaç istek yanıtlanabilir  
 - **VRAM kullanımı**: Bellek gereksinimi
 
----
 
 ## 🧠 KV Cache ile Hızlandırma
 **KV caching**, önceki adımlarda hesaplanan **Key-Value** değerlerini saklayarak:
@@ -95,7 +94,7 @@ Modelin her adımda birden fazla olasılığı paralel olarak değerlendirdiği 
 
 > Dezavantajı: Bellek tüketimi artar.
 
----
+
 
 ## ✅ Sonuç
 LLM inference sürecini etkili kullanmak için şu başlıkları iyi kavramak gerekir:
