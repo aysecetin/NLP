@@ -3,7 +3,6 @@
 ## 🔍 Inference Nedir?
 LLM’ler eğitildikten sonra, onlardan çıktı almak için kullanılan sürece **inference (çıkarım)** denir. Model, verilen bir input prompt’a göre **birer birer token üreterek** yanıt oluşturur.
 
----
 
 ## 🧲 Dikkat Mekanizması (Attention)
 LLM’lerin bağlamı anlamasını ve tutarlı metin üretmesini sağlayan temel yapı taşıdır. Önemli kelimelere odaklanarak doğru tahmin yapılmasını sağlar.
@@ -11,7 +10,7 @@ LLM’lerin bağlamı anlamasını ve tutarlı metin üretmesini sağlayan temel
 > Örnek: “Fransa’nın başkenti …” → “Paris”  
 Burada “Fransa” ve “başkenti” kelimeleri daha önemlidir.
 
----
+
 
 ## 🧮 Bağlam Uzunluğu (Context Length)
 Modelin aynı anda işleyebildiği maksimum token sayısıdır. Uzun bağlam daha anlamlı metinler üretir, ancak:
