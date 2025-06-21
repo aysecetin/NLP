@@ -12,3 +12,21 @@ classifier([
     "I've been waiting for a HuggingFace course my whole life.",
     "I hate this so much!",
 ])
+```
+
+Bu kodun çıktısı:
+
+```python
+
+[{'label': 'POSITIVE', 'score': 0.9598},
+ {'label': 'NEGATIVE', 'score': 0.9994}]
+```
+
+**Bu basit pipeline aslında üç aşamayı kapsar:**
+
+- Preprocessing (Ön işleme)
+
+- Model Inference (Modelden geçirme)
+
+- Postprocessing (Son işleme)
+
