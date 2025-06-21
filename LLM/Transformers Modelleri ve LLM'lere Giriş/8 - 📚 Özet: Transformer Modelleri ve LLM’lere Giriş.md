@@ -43,7 +43,7 @@ Transformer modelinin temel çalışma prensipleri:
 
 
 
-## 🚀 Modern LLM Gelişmeleri
+### 🚀 Modern LLM Gelişmeleri
 
 - Modeller zamanla hem boyut hem de yetenek açısından büyüdü.
 - **Scaling laws** (ölçekleme yasaları), modelin boyutuyla performansı nasıl artıracağını öngörür.
@@ -54,7 +54,7 @@ Transformer modelinin temel çalışma prensipleri:
 
 
 
-## 🛠️ Pratik Uygulamalar
+### 🛠️ Pratik Uygulamalar
 
 Bu bölümde öğrendiklerinle, modelleri gerçek dünyada nasıl kullanabileceğini de gördün:
 
@@ -64,7 +64,7 @@ Bu bölümde öğrendiklerinle, modelleri gerçek dünyada nasıl kullanabilece�
 
 
 
-## 🔭 Geleceğe Bakış
+### 🔭 Geleceğe Bakış
 
 Artık Transformer modellerinin nasıl çalıştığına dair sağlam bir temel oluşturduğuna göre, sonraki bölümlerde şunları öğreneceksin:
 
