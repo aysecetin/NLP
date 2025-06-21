@@ -20,7 +20,7 @@
 
 
 
-## 🏗️ Transformer Mimarisi
+### 🏗️ Transformer Mimarisi
 
 Transformer modelinin temel çalışma prensipleri:
 
@@ -33,7 +33,7 @@ Transformer modelinin temel çalışma prensipleri:
 
 
 
-## 🧩 Model Mimarileri ve Kullanım Alanları
+### 🧩 Model Mimarileri ve Kullanım Alanları
 
 | Mimari Türü     | Örnek Modeller                   | Kullanım Alanları                                       |
 |------------------|-----------------------------------|----------------------------------------------------------|
