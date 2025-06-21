@@ -7,7 +7,7 @@
 - Tek bir model, çok çeşitli görevleri yerine getirebilir.
 - Ancak bu modellerin **halüsinasyon üretme**, **önyargı taşıma** gibi sınırlılıkları da vardır.
 
----
+
 
 ## ⚙️ Transformer Yetenekleri
 
@@ -18,7 +18,7 @@
 - Çeviri ve diğer diziden diziye görevler
 - Ses tanıma ve görüntü sınıflandırma
 
----
+
 
 ## 🏗️ Transformer Mimarisi
 
@@ -31,7 +31,7 @@ Transformer modelinin temel çalışma prensipleri:
   - **Decoder-only** (sadece çözücü)
   - **Encoder-decoder** (hem kodlayıcı hem çözücü)
 
----
+
 
 ## 🧩 Model Mimarileri ve Kullanım Alanları
 
@@ -41,7 +41,7 @@ Transformer modelinin temel çalışma prensipleri:
 | Decoder-only     | GPT, LLaMA, Gemma, SmolLM         | Metin üretimi, sohbet botları, yaratıcı yazım            |
 | Encoder-decoder  | BART, T5, Marian, mBART           | Özetleme, çeviri, üretici soru-cevap                     |
 
----
+
 
 ## 🚀 Modern LLM Gelişmeleri
 
@@ -52,7 +52,7 @@ Transformer modelinin temel çalışma prensipleri:
   - **Pretraining** (ön eğitim)
   - **Instruction tuning** (talimatla ince ayar)
 
----
+
 
 ## 🛠️ Pratik Uygulamalar
 
@@ -62,7 +62,7 @@ Bu bölümde öğrendiklerinle, modelleri gerçek dünyada nasıl kullanabilece�
 - **Inference API** ile modelleri doğrudan tarayıcıda test etmek
 - Hangi modelin hangi göreve uygun olduğunu anlamak
 
----
+
 
 ## 🔭 Geleceğe Bakış
 
@@ -72,5 +72,3 @@ Artık Transformer modellerinin nasıl çalıştığına dair sağlam bir temel 
 - Farklı veri türlerini modele nasıl hazırlayacağın
 - Önceden eğitilmiş modelleri kendi görevlerine nasıl uyarlayacağın
 - Bu modelleri nasıl dağıtacağın (deploy)
-
-> 📌 Bu bölümde edindiğin bilgiler, daha ileri düzey teknikleri öğrenirken sana sağlam bir temel sağlayacak.
