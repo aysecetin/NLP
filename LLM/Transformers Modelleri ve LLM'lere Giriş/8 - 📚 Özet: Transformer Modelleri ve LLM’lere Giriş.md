@@ -1,6 +1,6 @@
 # 📚 Transformer Modelleri ve LLM’lere Giriş – Özet
 
-## 🧠 Doğal Dil İşleme (NLP) ve LLM’ler
+### 🧠 Doğal Dil İşleme (NLP) ve LLM’ler
 
 - NLP, metin sınıflandırmadan metin üretimine kadar birçok görevi kapsar.
 - LLM’ler, büyük miktarda metin verisiyle eğitilmiş, çok güçlü dil modelleridir.
@@ -9,7 +9,7 @@
 
 
 
-## ⚙️ Transformer Yetenekleri
+### ⚙️ Transformer Yetenekleri
 
 🤗 Transformers kütüphanesindeki `pipeline()` fonksiyonu ile önceden eğitilmiş modelleri kolayca kullanabilirsin:
 
