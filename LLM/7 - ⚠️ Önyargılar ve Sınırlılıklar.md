@@ -37,17 +37,17 @@ Erkek için verilen meslekler genellikle daha “prestijli” kabul edilen rolle
 **Wikipedia ve BookCorpus** gibi daha “nötr” veri kaynaklarıyla eğitilmiştir.  
 **Buna rağmen önyargılar hâlâ mevcut.**
 
----
 
-## 🧠 Gerçek: Modeller Önyargı Taşır
+
+### 🧠 Gerçek: Modeller Önyargı Taşır
 
 - LLM’ler sadece **istatistiksel örüntüleri öğrenir**.
 - Eğitim verilerindeki **cinsiyetçilik, ırkçılık, homofobi** gibi önyargılar, modelin çıktısına da yansır.
 - Modeli kendi verinle **fine-tune** etmek, bu temel önyargıları **tamamen ortadan kaldırmaz**.
 
----
 
-## 🚨 Ne Yapmalı?
+
+### 🚨 Ne Yapmalı?
 
 - **Modellerin tarafsız olmadığını** her zaman akılda tut.
 - Hassas uygulamalarda model çıktılarında:
