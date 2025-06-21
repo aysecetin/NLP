@@ -22,7 +22,7 @@ Bu kodun çıktısı:
  {'label': 'NEGATIVE', 'score': 0.9994}]
 ```
 
-**Bu basit pipeline aslında üç aşamayı kapsar:**
+Bu basit <pipeline> aslında üç aşamayı kapsar:
 
 - Preprocessing (Ön işleme)
 
