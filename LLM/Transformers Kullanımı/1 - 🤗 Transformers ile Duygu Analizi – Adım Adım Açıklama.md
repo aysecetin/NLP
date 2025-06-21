@@ -131,14 +131,14 @@ print(model.config.id2label)
 ```
 Sonuç:
 
-İlk cümle → %95.98 olasılıkla POZİTİF
+- İlk cümle → %95.98 olasılıkla POZİTİF
 
-İkinci cümle → %99.95 olasılıkla NEGATİF
+- İkinci cümle → %99.95 olasılıkla NEGATİF
 
-✅ Özet: NLP Pipeline’ın 3 Temel Aşaması
-Preprocessing → Tokenizer ile metni sayılara çevir
+### ✅ Özet: NLP Pipeline’ın 3 Temel Aşaması
+- Preprocessing → Tokenizer ile metni sayılara çevir
 
-Model Inference → Model üzerinden tahmin yap
+- Model Inference → Model üzerinden tahmin yap
 
-Postprocessing → Sonuçları olasılığa çevir ve etiketle eşleştir
+- Postprocessing → Sonuçları olasılığa çevir ve etiketle eşleştir
 
