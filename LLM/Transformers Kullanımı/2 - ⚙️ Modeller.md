@@ -20,3 +20,19 @@ model = AutoModel.from_pretrained("bert-base-cased")
 from transformers import BertModel
 model = BertModel.from_pretrained("bert-base-cased")
 ```
+### 2. Modeli Kaydetme ve Yükleme
+```python
+model.save_pretrained("klasor_adi")
+```
+
+- Bu klasöre iki dosya kaydedilir:
+
+- config.json: Model mimarisi ve metadata bilgisi.
+
+- pytorch_model.bin: Modelin ağırlıkları (state dict).
+
+Tekrar yüklemek için:
+
+```python
+model = AutoModel.from_pretrained("klasor_adi")
+```
