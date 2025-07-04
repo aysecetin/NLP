@@ -25,7 +25,7 @@ model = BertModel.from_pretrained("bert-base-cased")
 model.save_pretrained("klasor_adi")
 ```
 
-- Bu klasöre iki dosya kaydedilir:
+Bu klasöre iki dosya kaydedilir:
 
 - config.json: Model mimarisi ve metadata bilgisi.
 
