@@ -36,3 +36,30 @@ Tekrar yüklemek için:
 ```python
 model = AutoModel.from_pretrained("klasor_adi")
 ```
+
+3. Modeli Hugging Face Hub’a Yükleme
+Giriş yap:
+
+```python
+from huggingface_hub import notebook_login
+notebook_login()
+```
+ya da terminalden:
+
+```bash
+huggingface-cli login
+```
+
+Modeli yükle:
+
+
+```python
+model.push_to_hub("benim-harika-modelim")
+```
+
+Diğer kullanıcılar da artık şu şekilde modeli kullanabilir:
+
+
+```python
+model = AutoModel.from_pretrained("kullaniciadi/benim-harika-modelim")
+```
