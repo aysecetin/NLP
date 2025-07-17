@@ -63,3 +63,77 @@ Diğer kullanıcılar da artık şu şekilde modeli kullanabilir:
 ```python
 model = AutoModel.from_pretrained("kullaniciadi/benim-harika-modelim")
 ```
+
+
+### ✍️ **Metni Sayılara Çevirme (`Tokenizer`)**
+
+```python
+from transformers import AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+
+encoded = tokenizer("Merhaba, bu bir cümledir!")
+print(encoded)
+```
+
+Bu işlem 3 şey döner:
+
+- `input_ids`: Kelimelerin sayısal karşılıkları  
+- `token_type_ids`: Hangi kelime hangi cümleye ait (çift cümlelerde işe yarar)  
+- `attention_mask`: Hangi token’lara dikkat edilsin (örneğin padding olanlara edilmez)  
+
+Geri çevirmek için:
+
+```python
+tokenizer.decode(encoded["input_ids"])
+```
+
+Örnek çıktı:  
+`[CLS] Merhaba, bu bir cümledir! [SEP]`
+
+---
+
+### 🧱 **Çoklu Cümleleri İşlemek**
+
+```python
+encoded = tokenizer(
+    ["Nasılsın?", "İyiyim, teşekkürler!"],
+    return_tensors="pt",
+    padding=True
+)
+```
+
+- Farklı uzunluktaki cümleleri eşit boyuta getirmek için `padding=True` kullanılır.  
+- `return_tensors="pt"` ile PyTorch tensörleri döner.  
+- `truncation=True` ile çok uzun cümleler kesilir.  
+
+---
+
+### 🔠 **Özel Tokenlar (Special Tokens)**
+
+- BERT gibi modeller `[CLS]` ve `[SEP]` gibi özel token'lara ihtiyaç duyar.  
+- Tokenizer bu token’ları otomatik olarak ekler.  
+
+---
+
+### 🧪 **Modeli Çalıştırmak**
+
+```python
+import torch
+
+inputs = tokenizer("Bir örnek cümle", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+- Tokenizer çıktısı doğrudan modelin içine verilebilir.  
+
+---
+
+### 💡 Neden Bu Kadar Uğraşıyoruz?
+
+Çünkü:
+
+- Transformer modelleri metinle değil sayılarla çalışır.  
+- Sayılar modelin anlayabileceği şekilde hazırlanmalı (tokenize edilmeli, pad/truncate edilmeli, mask’lenmeli).  
+- Her modelin beklentisi farklı olabilir (örneğin özel tokenlar).  
+
