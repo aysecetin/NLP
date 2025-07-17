@@ -91,7 +91,7 @@ tokenizer.decode(encoded["input_ids"])
 Örnek çıktı:  
 `[CLS] Merhaba, bu bir cümledir! [SEP]`
 
----
+
 
 ### 🧱 **Çoklu Cümleleri İşlemek**
 
@@ -107,14 +107,14 @@ encoded = tokenizer(
 - `return_tensors="pt"` ile PyTorch tensörleri döner.  
 - `truncation=True` ile çok uzun cümleler kesilir.  
 
----
+
 
 ### 🔠 **Özel Tokenlar (Special Tokens)**
 
 - BERT gibi modeller `[CLS]` ve `[SEP]` gibi özel token'lara ihtiyaç duyar.  
 - Tokenizer bu token’ları otomatik olarak ekler.  
 
----
+
 
 ### 🧪 **Modeli Çalıştırmak**
 
@@ -127,7 +127,7 @@ outputs = model(**inputs)
 
 - Tokenizer çıktısı doğrudan modelin içine verilebilir.  
 
----
+
 
 ### 💡 Neden Bu Kadar Uğraşıyoruz?
 
