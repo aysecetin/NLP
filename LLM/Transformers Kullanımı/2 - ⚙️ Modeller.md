@@ -37,7 +37,7 @@ Tekrar yüklemek için:
 model = AutoModel.from_pretrained("klasor_adi")
 ```
 
-3. Modeli Hugging Face Hub’a Yükleme
+### 3. Modeli Hugging Face Hub’a Yükleme
 Giriş yap:
 
 ```python
