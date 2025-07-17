@@ -3,7 +3,6 @@
 
 Transformer modelleri yalnızca **sayısal veriyle** çalışabilir. Tokenizer’lar, metni bu sayısal forma çeviren araçlardır.
 
----
 
 ## 📌 Temel Amaç
 
@@ -14,7 +13,7 @@ Jim Henson was a puppeteer
 
 Model bunu anlayamaz. Tokenizer bu metni anlamlı ve minimum bilgi kaybıyla **sayılara çevirir**.
 
----
+
 
 ## 🧱 Tokenizer Türleri
 
@@ -29,7 +28,7 @@ Model bunu anlayamaz. Tokenizer bu metni anlamlı ve minimum bilgi kaybıyla **s
 - Çok büyük vocabulary gerekir.
 - Bilinmeyen kelimeler için `[UNK]` token’ı kullanılır.
 
----
+
 
 ### 2. **Karakter Tabanlı (Character-based) Tokenizer**
 
@@ -41,7 +40,7 @@ Model bunu anlayamaz. Tokenizer bu metni anlamlı ve minimum bilgi kaybıyla **s
 - `[UNK]` yok denecek kadar az
 - Ancak uzunluk artar ve her karakter anlamsızdır
 
----
+
 
 ### 3. **Alt-kelime Tabanlı (Subword-based) Tokenizer**
 
@@ -54,7 +53,7 @@ Avantajları:
 - Küçük vocabulary ile geniş kapsama
 - Türkçe gibi eklemeli dillerde idealdir
 
----
+
 
 ### 4. **Popüler Yöntemler**
 
@@ -62,7 +61,7 @@ Avantajları:
 - **WordPiece** – BERT
 - **SentencePiece / Unigram** – Multilingual modeller
 
----
+
 
 ## 💾 Tokenizer Yükleme ve Kaydetme
 
@@ -73,7 +72,7 @@ tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 tokenizer.save_pretrained("klasor_adi")
 ```
 
----
+
 
 ## 🔁 Encoding (Metni Sayıya Çevirme)
 
@@ -89,7 +88,7 @@ ids = tokenizer.convert_tokens_to_ids(tokens)
 # [7993, 170, 11303, 1200, 2443, 1110, 3014]
 ```
 
----
+
 
 ## 🔁 Decoding (Sayılardan Metne Geri Dönüş)
 
@@ -98,7 +97,7 @@ decoded = tokenizer.decode([7993, 170, 11303, 1200, 2443, 1110, 3014])
 # 'Using a Transformer network is simple'
 ```
 
----
+
 
 ## 🧪 Uygulama Önerisi
 
@@ -108,7 +107,7 @@ decoded = tokenizer.decode([7993, 170, 11303, 1200, 2443, 1110, 3014])
 
 Sonuçları önceki örneklerle karşılaştır.
 
----
+
 
 ## 🔚 Özet
 
