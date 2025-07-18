@@ -127,3 +127,11 @@ trainer.train()
 
 
 Trainer API, tüm bu süreci yüksek seviyede kontrol etmeni sağlayarak hızlı ve güvenilir model ince ayarı sağlar.
+
+### 💡 Önemli Noktalar:
+
+- API Trainer, çoğu eğitim karmaşıklığını ele alan üst düzey bir arayüz sağlar
+- processing_classUygun veri işleme için belirteçleyicinizi belirtmek için kullanın
+- TrainingArgumentseğitimin tüm yönlerini kontrol eder: öğrenme hızı, parti büyüklüğü, değerlendirme stratejisi ve optimizasyonlar
+-  compute_metricsyalnızca eğitim kaybının ötesinde özel değerlendirme ölçümlerini mümkün kılar
+- Karma hassasiyet ( ) ve gradyan birikimi gibi modern özellikler, fp16=Trueeğitim verimliliğini önemli ölçüde artırabilir
