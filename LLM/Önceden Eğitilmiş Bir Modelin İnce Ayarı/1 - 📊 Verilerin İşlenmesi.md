@@ -43,6 +43,24 @@ data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 ```
 Bu yapı, batch içerisindeki en uzun girdiye göre padding yapar.
 
+**Soru-Cevap**
+
+1. `Dataset.map()`'i `batched=True` ile kullanmanın temel avantajı nedir?  
+✅ Birden fazla örneği aynı anda işleyerek tokenleştirmeyi çok daha hızlı hale getirir.
+
+2. Dinamik padding'in avantajı nedir?  
+✅ Her partide yalnızca maksimum uzunluğa kadar dolgu yaparak hesaplama yükünü azaltır.
+
+3. `token_type_ids` neyi temsil eder?  
+✅ Cümle çiftleri işlenirken her bir tokenın hangi cümleye ait olduğunu belirtir.
+
+4. `load_dataset('glue', 'mrpc')` fonksiyonundaki ikinci argüman neyi belirtir?  
+✅ GLUE benchmark'ındaki belirli görev veya alt küme.
+
+5. Eğitimden önce `sentence1` ve `sentence2` sütunları neden kaldırılır?  
+✅ Model bu ham metin sütunlarını beklemiyor ve hata veriyor.
+
+
 ## 🚀 Önemli Noktalar
 
 - `batched=True` ile `Dataset.map()` işlemleri hızlandırılır.
