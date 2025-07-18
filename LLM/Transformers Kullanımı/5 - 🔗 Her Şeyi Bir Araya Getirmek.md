@@ -8,7 +8,7 @@ Her adımı manuel yapmaya çalıştık:
 
 Ama aslında 🤗 Transformers API tüm bu işlemleri bizim yerimize **tek adımda** yapabiliyor.
 
-## ⚙️ Basit Kullanım
+### ⚙️ Basit Kullanım
 
 ```python
 from transformers import AutoTokenizer
@@ -27,7 +27,7 @@ Burada `model_inputs`, modele verilecek tüm bilgileri içerir:
 
 
 
-## 📥 Birden Fazla Cümle ile Kullanım
+### 📥 Birden Fazla Cümle ile Kullanım
 
 ```python
 sequences = [
@@ -40,40 +40,40 @@ model_inputs = tokenizer(sequences)
 
 
 
-## 📏 Otomatik Padding
+### 📏 Otomatik Padding
 
-### En uzun cümleye göre:
+**En uzun cümleye göre:**
 ```python
 tokenizer(sequences, padding="longest")
 ```
 
-### Modele göre:
+**Modele göre:**
 ```python
 tokenizer(sequences, padding="max_length")
 ```
 
-### Belirli uzunlukta:
+**Belirli uzunlukta:**
 ```python
 tokenizer(sequences, padding="max_length", max_length=8)
 ```
 
 
 
-## ✂️ Otomatik Truncation
+### ✂️ Otomatik Truncation
 
-### Modele göre kısalt:
+**Modele göre kısalt:**
 ```python
 tokenizer(sequences, truncation=True)
 ```
 
-### Belirli uzunlukta kısalt:
+**Belirli uzunlukta kısalt:**
 ```python
 tokenizer(sequences, max_length=8, truncation=True)
 ```
 
 
 
-## 🔄 Tensor Formatı Seçmek
+### 🔄 Tensor Formatı Seçmek
 
 ```python
 # PyTorch tensörleri
@@ -85,7 +85,7 @@ tokenizer(sequences, padding=True, return_tensors="np")
 
 
 
-## 🔠 Özel Token'lar
+### 🔠 Özel Token'lar
 
 Tokenizer bazen ek token ID'leri ekler:
 
@@ -115,7 +115,7 @@ tokenizer.decode(ids)
 
 
 
-## ✅ Baştan Sona: Tokenizer'dan Modele
+### ✅ Baştan Sona: Tokenizer'dan Modele
 
 ```python
 import torch
