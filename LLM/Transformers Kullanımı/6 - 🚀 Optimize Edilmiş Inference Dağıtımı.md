@@ -9,9 +9,9 @@ Bu bölümde büyük dil modellerini (LLM) **üretim ortamında** verimli bir ş
 
 Bu sistemler; yüksek verimlilik, hafıza yönetimi, esneklik ve üretime kolay entegrasyon açısından farklı avantajlar sunar.
 
----
 
-## ⚙️ Framework Karşılaştırma Tablosu
+
+### ⚙️ Framework Karşılaştırma Tablosu
 
 | Özellik | TGI | vLLM | llama.cpp |
 |--------|-----|------|-----------|
@@ -20,33 +20,33 @@ Bu sistemler; yüksek verimlilik, hafıza yönetimi, esneklik ve üretime kolay 
 | 📦 Dağıtım | Kubernetes desteği, Prometheus, Grafana | OpenAI API uyumu, Ray entegrasyonu | Minimal, C/C++ tabanlı, portatif |
 | 🧱 Donanım Desteği | GPU zorunlu | GPU | CPU ağırlıklı, opsiyonel GPU |
 
----
 
-## 💡 TGI: Flash Attention 2
+
+### 💡 TGI: Flash Attention 2
 
 - **Flash Attention**, belleğe veri transferini minimuma indirerek GPU’yu daha verimli kullanır.
 - Bellek taşmaları önlenir, VRAM verimli kullanılır.
 - Sürekli batchleme ile GPU hep meşgul tutulur.
 
----
 
-## 🔁 vLLM: PagedAttention
+
+### 🔁 vLLM: PagedAttention
 
 - **PagedAttention**, KV cache yönetiminde “sayfalama” yaparak bellek parçalanmasını azaltır.
 - Bellek paylaşımı sayesinde paralel örnekler daha verimli işlenir.
 - 24 kata kadar throughput artışı sağlanabilir.
 
----
 
-## 🧮 llama.cpp: Quantization + CPU Optimizasyonu
+
+### 🧮 llama.cpp: Quantization + CPU Optimizasyonu
 
 - 32-bit FP yerine 8-bit, 4-bit, 2-bit gibi quantization ile daha az bellek kullanımı
 - GGUF formatı ile CPU dostu inference
 - AVX2, AVX-512 gibi CPU mimarileri için optimize edilmiş
 
----
 
-## 🧪 Kurulum ve Sunucu Başlatma
+
+### 🧪 Kurulum ve Sunucu Başlatma
 
 ### 🔹 TGI
 
@@ -73,13 +73,13 @@ make
 ./server -m model.gguf --port 8080
 ```
 
----
 
-## 🧵 Metin Üretimi (Text Generation)
+
+### 🧵 Metin Üretimi (Text Generation)
 
 Tüm framework’ler hem **chat** hem de **text generation** için kullanılır:
 
-### Örnek (Hugging Face Client ile):
+**Örnek (Hugging Face Client ile):**
 
 ```python
 from huggingface_hub import InferenceClient
@@ -99,28 +99,28 @@ print(response.generated_text)
 
 ---
 
-## 🎛️ Gelişmiş Kontroller
+### 🎛️ Gelişmiş Kontroller
 
-### Sampling Ayarları:
+**Sampling Ayarları:**
 
 - `temperature`: Rastgelelik (yüksekse daha yaratıcı)
 - `top_p`: Belirli olasılık eşiğine kadar olan token’lar
 - `top_k`: En olası k token’dan seçim
 
-### Tekrardan Kaçınma:
+**Tekrardan Kaçınma:**
 
 - `repetition_penalty`: Aynı token tekrarını engeller
 - `frequency_penalty`: Sık gelen token’lara ceza
 - `presence_penalty`: Önceki token’lara ceza
 
-### Uzunluk & Durdurma:
+**Uzunluk & Durdurma:**
 
 - `max_tokens`: Maksimum üretim uzunluğu
 - `stop_sequences`: Belirli diziler geldiğinde durdur
 
----
 
-## 💾 Bellek Yönetimi
+
+### 💾 Bellek Yönetimi
 
 ### TGI
 
@@ -157,8 +157,6 @@ engine_args = AsyncEngineArgs(
 
 llm = LLM(engine_args=engine_args)
 ```
-
----
 
 Bu üç sistem de farklı senaryolar için idealdir:
 
