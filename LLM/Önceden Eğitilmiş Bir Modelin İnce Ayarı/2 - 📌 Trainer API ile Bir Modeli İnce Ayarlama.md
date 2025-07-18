@@ -128,7 +128,7 @@ trainer.train()
 
 Trainer API, tüm bu süreci yüksek seviyede kontrol etmeni sağlayarak hızlı ve güvenilir model ince ayarı sağlar.
 
-### 💡 Önemli Noktalar:
+## 💡 Önemli Noktalar:
 
 - API Trainer, çoğu eğitim karmaşıklığını ele alan üst düzey bir arayüz sağlar
 - processing_classUygun veri işleme için belirteçleyicinizi belirtmek için kullanın
