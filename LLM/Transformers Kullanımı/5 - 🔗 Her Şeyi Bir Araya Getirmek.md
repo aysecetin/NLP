@@ -48,6 +48,7 @@ tokenizer(sequences, padding="longest")
 ```
 
 **Modele göre:**
+- _Modelin config.max_position_embeddings değeri neyse (örneğin BERT için bu genellikle 512), o uzunluğa kadar pad yapılır._
 ```python
 tokenizer(sequences, padding="max_length")
 ```
