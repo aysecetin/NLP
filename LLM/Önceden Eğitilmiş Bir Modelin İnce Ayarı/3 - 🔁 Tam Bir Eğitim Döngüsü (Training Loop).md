@@ -22,7 +22,7 @@ tokenized_datasets = raw_datasets.map(tokenize_function, batched=True)
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 ```
 
----
+
 
 ## 🧹 Ön İşleme
 
@@ -32,7 +32,7 @@ tokenized_datasets = tokenized_datasets.rename_column("label", "labels")
 tokenized_datasets.set_format("torch")
 ```
 
----
+
 
 ## 🧱 DataLoader Tanımı
 
@@ -47,7 +47,6 @@ eval_dataloader = DataLoader(
 )
 ```
 
----
 
 ## 🧠 Model Kurulumu
 
@@ -57,7 +56,7 @@ from transformers import AutoModelForSequenceClassification
 model = AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels=2)
 ```
 
----
+
 
 ## 🛠️ Optimizasyon
 
@@ -66,7 +65,7 @@ from torch.optim import AdamW
 optimizer = AdamW(model.parameters(), lr=5e-5)
 ```
 
----
+
 
 ## 📉 Learning Rate Scheduler
 
@@ -83,7 +82,7 @@ lr_scheduler = get_scheduler(
 )
 ```
 
----
+
 
 ## ⚡ Cihaz Kullanımı
 
@@ -94,7 +93,7 @@ device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cp
 model.to(device)
 ```
 
----
+
 
 ## 🔁 Eğitim Döngüsü
 
@@ -117,7 +116,7 @@ for epoch in range(num_epochs):
         progress_bar.update(1)
 ```
 
----
+
 
 ## 🧪 Değerlendirme
 
@@ -138,7 +137,7 @@ for batch in eval_dataloader:
 metric.compute()
 ```
 
----
+
 
 ## 🚀 Accelerate ile Dağıtık Eğitim
 
@@ -175,13 +174,19 @@ for epoch in range(num_epochs):
         progress_bar.update(1)
 ```
 
----
+## 💡 Ana Çıkarımlar:
 
-## 🧠 Quiz Bilgileri
+❀ Elle yazılan eğitim döngüleri (manual training loops) size tam kontrol sağlar, ancak doğru sıralamayı anlamayı gerektirir:
+forward → backward → optimizer.step() → scheduler.step() → optimizer.zero_grad()
 
-- **AdamW**: Adam ile aynı, ama ağırlık çürümesi (weight decay) için daha uygun.
-- **Eğitim akışı**: forward → backward → optimizer.step → scheduler.step → zero_grad
-- **Accelerate**: Dağıtık eğitimi kolaylaştırır.
-- **model.eval()**: Dropout gibi katmanların davranışını değiştirir.
-- **torch.no_grad()**: Bellekten tasarruf sağlar, gradyan hesaplamayı kapatır.
-- **accelerator.prepare()**: Model, optimizer ve dataloader’ı uygun yapıya sokar.
+❀ Weight decay içeren AdamW optimizer'ı, transformer modelleri için önerilen optimizördür.
+
+❀ model.eval() ve torch.no_grad(), değerlendirme sırasında doğru davranış ve verimlilik için mutlaka kullanılmalıdır.
+
+❀ 🤗 Accelerate, dağıtık eğitimi (multi-GPU/TPU) çok az kod değişikliğiyle erişilebilir hale getirir.
+
+❀ Cihaz yönetimi (tensörleri CPU/GPU’ya taşıma), PyTorch işlemleri için kritik öneme sahiptir.
+
+❀ Mixed precision, gradient accumulation ve gradient clipping gibi modern teknikler, eğitim verimliliğini önemli ölçüde artırabilir.
+
+
